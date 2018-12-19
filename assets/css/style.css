@@ -1,0 +1,540 @@
+.image-head {
+    display: block!important;
+    margin: auto!important;
+    padding-bottom: 30px;
+}
+.radio{
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  border:4px solid #ccc;
+  border-top-color:#bbb;
+  border-left-color:#bbb;
+  background:#fff;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+}
+.radio:checked{
+  border:14px solid #27ae60;
+}
+
+.session-schedule-details {
+display: block;
+margin: auto;
+width: 90%;
+padding: 20px;
+margin-bottom: 40px;
+background-color: #FFFDE7;
+border: 1px solid #ccc; 
+}
+.session-schedule-time {
+margin: auto;
+width: 90%;
+padding: 20px;
+margin-bottom: 40px;
+margin-left: 20px;
+}
+.registration-schedule-details {
+display: block;
+margin: auto;
+/*width: 90%;*/
+padding: 20px;
+margin-top: 20px;
+margin-bottom: 40px;
+background-color: #F1F8E9;
+border: 1px solid #ccc; 
+}
+.thank-you {
+    /*padding-top: 100px!important;*/
+}
+.error-notification {
+    background-color: #ffebee;
+    border: 1px solid #51A351;
+    border-radius: 10px;
+    padding:  20px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.error-notification span:before{
+    content: "";
+    display: block;
+    background: url("error.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: -10px 6px 0 0;
+}
+.site-notification {
+    background-color: #ecf0f1;
+    border: 1px solid #51A351;
+    border-radius: 10px;
+    padding:  20px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+.addeventatc_dropdown .frs a {
+    display: none!important;
+}
+.site-notification span:before{
+    content: "";
+    display: block;
+    background: url("icon.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+.location_map{
+    margin-top: 50px;
+    padding: 20px;
+}
+.location_map iframe{
+    height: 300px;
+}
+.hide_me {
+    display: none!important;
+}
+.notify-error {
+    padding: 20px;
+    background-color: #FFEEF4;
+    margin-bottom: 10px;
+}
+.notify-info {
+    padding: 20px;
+    background-color: #F9FBE7;
+    margin-bottom: 10px;
+}
+.navistar-find-reservation {
+	width: 400px;
+	margin:auto;
+	min-height: 20px;
+    padding: 19px;
+    background-color: #fff;
+    border: 1px solid #9bcf53;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    overflow:hidden;
+    position:relative;
+}
+
+.navistar-find-reservation.working:after {
+	content:"";
+	position:absolute;
+	display:block;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background:white;
+	opacity:0.3;
+}
+
+
+.navistar-find-reservation label {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    display:block;
+    margin-bottom: 5px;
+
+}
+
+.navistar-find-reservation input, .navistar-find-reservation select {
+	display: inline-block;
+    height: 30px;
+    padding: 4px 6px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width:50%;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+	border-color: #cccccc;
+}
+
+
+.navistar-find-reservation input:-moz-placeholder,
+.navistar-find-reservation textarea:-moz-placeholder{color:#999999;}
+.navistar-find-reservation input:-ms-input-placeholder,
+.navistar-find-reservation textarea:-ms-input-placeholder{color:#999999;}
+.navistar-find-reservation input::-webkit-input-placeholder,
+.navistar-find-reservation textarea::-webkit-input-placeholder{color:#999999;}
+
+.navistar-find-reservation fieldset {
+	padding:0px;
+	margin:0px 0px 10px 0px;
+	border:0px;
+}
+
+.navistar-find-reservation button {
+	color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #5bb75b;
+    background-image: -moz-linear-gradient(top, #62c462, #51a351);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+    background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+    background-image: -o-linear-gradient(top, #62c462, #51a351);
+    background-image: linear-gradient(to bottom, #62c462, #51a351);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    *background-color: #51a351;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    padding: 9px 14px;
+    font-size: 16px;
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-weight:normal;
+    float:right;
+}
+
+.navistar-find-reservation button:hover {
+	color: #ffffff;
+    background-color: #51a351;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+    text-decoration:none;
+}
+
+.navistar-find-reservation fieldset.error > label {
+	color:#b94a48;
+
+}
+
+.navistar-find-reservation fieldset.error > input {
+    border-color: #b94a48;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    color: #b94a48;
+}
+
+.navistar-find-reservation .error-message {
+    display: none;
+    vertical-align: middle;
+    padding-left: 5px;
+    color: #b94a48;
+    font-size:12px;
+
+}
+
+.navistar-find-reservation .error .error-message {
+    display: inline-block;
+}
+
+#navistar-find-reservation-errors {
+	display:none;
+    color: #b94a48;
+    max-width:500px;
+    margin:0px auto 20px auto;
+}
+
+/*.navistar-select-workshop {
+    width: 420px;
+    margin:auto;
+    min-height: 20px;
+    padding: 19px;
+    background-color: #fff;
+    border: 1px solid #9bcf53;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    overflow:hidden;
+    position:relative;
+}
+/*.navistar-select-workshop label{
+    display: none;
+}*/
+
+.navistar-find-reservation .required_field, .navistar-select-workshop .required_field{
+    /*float: right;*/
+    font-size: x-small;
+    color: red;
+    float: right;
+}
+
+.navistar-select-workshop ::placeholder {
+    color: #ccc;
+}
+
+.navistar-select-workshop.working:after {
+    content:"";
+    position:absolute;
+    display:block;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:white;
+    opacity:0.3;
+}
+
+
+.navistar-select-workshop input[type="text"], .navistar-select-workshop select {
+    display: inline-block;
+    height: 30px;
+    padding: 4px 6px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width:320px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+    border-color: #cccccc;
+}
+.half{
+    width: 50%;
+}
+.navistar-select-workshop select {
+width: 50%;
+}
+.navistar-select-workshop input:-moz-placeholder,
+.navistar-select-workshop textarea:-moz-placeholder{color:#999999;}
+.navistar-select-workshop input:-ms-input-placeholder,
+.navistar-select-workshop textarea:-ms-input-placeholder{color:#999999;}
+.navistar-select-workshop input::-webkit-input-placeholder,
+.navistar-select-workshop textarea::-webkit-input-placeholder{color:#999999;}
+
+.navistar-select-workshop fieldset {
+    padding:0px;
+    margin:0px 0px 10px 0px;
+    border:0px;
+}
+
+.navistar-select-workshop button {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #5bb75b;
+    background-image: -moz-linear-gradient(top, #62c462, #51a351);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+    background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+    background-image: -o-linear-gradient(top, #62c462, #51a351);
+    background-image: linear-gradient(to bottom, #62c462, #51a351);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    *background-color: #51a351;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    padding: 9px 14px;
+    font-size: 16px;
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-weight:normal;
+    float:right;
+}
+
+.navistar-select-workshop button:hover {
+    color: #ffffff;
+    background-color: #51a351;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+    text-decoration:none;
+}
+
+.navistar-select-workshop fieldset.error > label {
+    color:#b94a48;
+}
+
+.navistar-select-workshop fieldset.error > input {
+    border-color: #b94a48;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    color: #b94a48;
+}
+
+.navistar-select-workshop .error-message {
+    display: none;
+    vertical-align: middle;
+    padding-left: 5px;
+    color: #b94a48;
+    font-size:12px;
+}
+
+.navistar-select-workshop .error .error-message {
+    display: inline-block;
+}
+
+#navistar-select-workshop-errors {
+    padding: 10px;
+    font-size: small;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    max-width:500px;
+    margin:0px auto 20px auto;
+}
+
+/* Start Session Selection */
+
+.navistar-session-selection .student-details{
+    max-width:900px;
+    margin: 0 auto;
+}
+
+.navistar-session-selection .student-details .student-information{
+    list-style: none;
+}
+
+.navistar-session-selection .session-schedule{
+    max-width:1280px;
+    margin:0 auto;
+}
+
+.navistar-session-selection .session-schedule .session-schedule-day{
+    text-align:center;
+}
+
+.navistar-session-selection .session-schedule::after{
+    clear:both;
+    content:' ';
+}
+
+.navistar-session-selection .session-schedule .column{
+    padding-left:10px;
+    padding-right:10px;
+    float:left;
+}
+
+.navistar-session-selection .session-schedule.col-2 .column{
+    width:50%;
+}
+
+.navistar-session-selection .session-schedule.col-3 .column{
+    width:calc(100% / 3);
+}
+
+.navistar-session-selection .session-schedule.col-4 .column{
+    width:25%;
+}
+
+.navistar-session-selection .session-schedule .session-schedule-time .selected-session:disabled{
+    border:none;
+}
+
+.navistar-session-selection .session-schedule .session-schedule-time .selected-session:disabled::before{
+    content: 'FULL';
+    font-weight: 700;
+    color: red;
+}
+
+.navistar-session-selection .session-selection-submit{
+    text-align:center;
+}
+
+.navistar-session-selection .session-selection-submit input[type='submit']{
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #5bb75b;
+    background-image: -moz-linear-gradient(top, #62c462, #51a351);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+    background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+    background-image: -o-linear-gradient(top, #62c462, #51a351);
+    background-image: linear-gradient(to bottom, #62c462, #51a351);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+} 
+.navistar-session-selection .session-selection-submit input[type='submit']:disabled{
+     background: #ccc;
+     cursor: not-allowed;
+}
+/* End Session Selection */
+
+/* Start Submit Registration */
+
+.navistar-submit-registration{
+    max-width:1280px;
+    margin:0 auto;
+}
+
+.navistar-submit-registration .reservation-detail-review{
+    list-style: none;
+}
+
+.navistar-submit-registration .reservation-detail-review li{
+    margin:10px 0;
+}
+
+.navistar-submit-registration .reservation-detail-review .reservation-detail-label{
+    font-weight:700;
+}
+
+.navistar-submit-registration .print-reservation-confirmation{
+    color:#fff;
+    background:#0044cc;
+    padding:10px;
+    border-radius:5px;
+    background-image:linear-gradient(to bottom, #0088cc, #0044cc);
+    box-shadow: none;
+}
+
+.navistar-submit-registration .print-reservation-confirmation:hover{
+    color:#fff;
+    background:#0044cc;
+    padding:10px;
+    border-radius:5px;
+    box-shadow: none;
+    background-image:linear-gradient(to bottom, #0088cc, #0044cc);
+}
+
+/* End Submit Registration */
