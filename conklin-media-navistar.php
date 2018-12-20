@@ -53,8 +53,10 @@ class CMNIPlugin {
 		global $options;
 		//enqueue scripts
 		wp_enqueue_style('CMNIstyle', plugins_url('/assets/css/style.css', __FILE__ ) );
+		wp_enqueue_style('add2calstyle', plugins_url('/assets/css/atc-style-glow-orange.css', __FILE__ ) );
 		wp_enqueue_script('CMNIscript', plugins_url('/assets/js/front.js', __FILE__ ), array( "jquery" ));
 		wp_localize_script( "cmni", "cmni", array("ajaxurl" => admin_url( "admin-ajax.php")));
+		wp_enqueue_script('add2caljs', plugins_url('/assets/js/add2cal.js', __FILE__ ));
 		wp_enqueue_script('cmnijs', plugins_url('/assets/js/front.js', __FILE__ ));
 		//$options = get_option( 'CMNI_settings' );
 
@@ -100,7 +102,7 @@ add_shortcode( "cmni_select_workshop", "cmni_shortcode_select_workshop");
 
 function cmni_shortcode_select_workshop(){
 	ob_start();
-	include dirname( __FILE__ ) . "/views/shortcodes/select_workshop.php"#E3B6B6;
+	include dirname( __FILE__ ) . "/views/shortcodes/select_workshop.php";
 	return ob_get_clean();
 }
 

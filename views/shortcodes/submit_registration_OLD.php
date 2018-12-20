@@ -1,12 +1,4 @@
-<!-- <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script> -->
-<script type="text/javascript">(function () {
-            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-                var h = d[g]('body')[0];h.appendChild(s); }})();
-</script>
+<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 <?php  if( empty ($_POST) ): ?> 
 	<div class="error-notification"><span>There was an error submitting your registration. Please try again.</span></div>
 
@@ -251,15 +243,16 @@ curl_close($ch);
 			?>
 
 		<!-- ADD to Calendar Button code -->
-		<span class="addtocalendar atc-style-glow-orange" data-calendars="iCalendar, Google Calendar">
-        <var class="atc_event">
-            <var class="atc_date_start"><?php 
+		<div title="Add to Calendar" class="addeventatc">
+		    Add to Calendar
+		    <span class="start"><?php 
 					        $session_date = $data['SessionStartTime']; 
 					        echo date('F j, Y h:i a', strtotime($session_date));
-					        ?></var>
-            <var class="atc_timezone">America/New_York</var>
-            <var class="atc_title">Workshop Reservation</var>
-            <var class="atc_description">Reservation #: <?php 
+					        ?></span>
+		    <span class="timezone">America/Los_Angeles</span>
+		    <span class="title">Workshop Reservation</span>
+		    <span class="description">
+		    				Reservation #: <?php 
 								if (($data['reservationNumber'] !== null) || ($data['reservationNumber'] !=='')){
 									echo $data['reservationNumber']; 
 								}
@@ -270,10 +263,11 @@ curl_close($ch);
 							
 							?> <br />
 							Meeting Room: <?php echo $registration_information['meeting_room'] ;?> <br />
-							Direction: <?php echo $registration_information['directions'];?> </var>
-            <var class="atc_location"><?php echo $registration_information['where'] . ' ' . $registration_information['located'];?></var>
-        </var>
-    </span>
+							Direction: <?php echo $registration_information['directions'];?> 
+
+			</span>
+		    <span class="location"><?php echo $registration_information['where'] . ' ' . $registration_information['located'];?></span>
+		</div>
 		<div class="location_map">
 
 		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=<?php echo $map_query; ?>&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" aria-label="<?php echo $location_map; ?>"></iframe>
